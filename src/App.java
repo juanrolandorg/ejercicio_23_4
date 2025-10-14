@@ -67,10 +67,10 @@ public class App {
     float total = preNoDesc - descu;
 
     //"dibujamos el ticket"
-    System.out.printf("%-19s %-19s\n", "Base Imponible" +precioNorm);
-    System.out.printf("%-19s %-19s\n", "IVA("+IVANum+")" +IVA);
-    System.out.printf("%-19s %-19s\n", "Precio con IVA", +preNoDesc);
-    System.out.printf("%-19s %-19s\n", "Promo("+descu+")", valorDescu);
-    System.out.printf("%-19s %-19s\n", "TOTAL" +total);
+    System.out.printf("%-19s %.2f\n", "Base Imponible:", precioNorm);
+    System.out.printf("%-19s %.2f\n", "IVA (" + IVANum + "%):", IVA);
+    System.out.printf("%-19s %.2f\n", "Precio con IVA:", preNoDesc);
+    System.out.printf("%-19s %.2f\n", "Descuento aplicado:", preNoDesc - total);
+    System.out.printf("%-19s %.2f\n", "TOTAL:", total);
     }
 }
